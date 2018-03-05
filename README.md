@@ -22,4 +22,6 @@ Operating Systems (H) 2018
 大作业
 ------
 
-（尚待补充）
+*可能需要先阅读实验一，学习git和GitHub基本用法*
+
+请大家自由组队，并在GitHub上[创建团队repo](https://classroom.github.com/g/M5Z0fAhL)，在其中记录队伍的所有成果。
