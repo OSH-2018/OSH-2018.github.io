@@ -51,6 +51,6 @@ done
 
 - 正确绑定学号并创建了仓库
 - 仓库中有`hello_linux.sh`文件
-- `hello_linux.sh`采用了Linux换行符
+- `hello_linux.sh`采用了UNIX/Linux风格换行符（即使用"\n"而非Windows风格的"\r\n"代表换行）
 - `hello_linux.sh`是可执行文件
 - `hello_linux.sh`功能正确
