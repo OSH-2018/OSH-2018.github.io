@@ -36,7 +36,7 @@ Linux发行版数量众多（见参考资料1），其中部分较为主流的Li
 * GNOME (Debian, Fedora默认桌面环境)
 * KDE
 * Unity (Ubuntu默认桌面环境)
-* XFACE
+* XFCE
 
 虽然可以在纯命令行(command line)模式下使用Linux，但由于后续实验需要使用浏览器执行部分操作，因此建议大家安装至少一种桌面环境。
 
