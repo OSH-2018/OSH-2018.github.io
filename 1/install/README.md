@@ -29,7 +29,7 @@ Linux发行版数量众多（见参考资料1），其中部分较为主流的Li
 * [Parallels Desktop](http://www.parallels.com/products/desktop/) （商业软件，支持macOS）
 * [VMware Fusion](http://www.vmware.com/products/fusion.html) （商业软件，支持macOS）
 * [VMware WorkStation](http://www.vmware.com/products/workstation.html) （商业软件，支持Windows, Linux）
-* [VMware Player](http://www.vmware.com/products/player.html) （商业软件，非商业用途免费，支持Windows. Linux）
+* [VMware Player](http://www.vmware.com/products/player.html) （商业软件，非商业用途免费，支持Windows, Linux）
 
 ## 桌面环境
 
