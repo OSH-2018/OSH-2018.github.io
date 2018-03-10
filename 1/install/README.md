@@ -10,6 +10,7 @@ Linux发行版数量众多（见参考资料1），其中部分较为主流的Li
 * [Arch Linux](https://wiki.archlinux.org/index.php/Installation_guide_(简体中文))
 * [Elementary OS](https://elementary.io/zh_CN/docs/installation#installation)
 * [Deepin](https://wiki.deepin.org/?title=原生安装)
+* [Gentoo Linux](https://www.gentoo.org/get-started/)
 
 不同的发行版有各自的特点，设计哲学也不尽相同，大家可以选择任意一款自己喜欢的Linux发行版。如果是初次接触Linux，可以选择Ubuntu，安装相对容易。
 
