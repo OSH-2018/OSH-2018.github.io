@@ -32,7 +32,7 @@ It is the time you have wasted for your rose that makes your rose so important.
 Antoine (The Little Prince)
 ```
 
-参考代码（鼓励大家寻找更简单的写法）：
+参考代码1（鼓励大家寻找更简单的写法）：
 
 ```Shell
 #!/bin/bash
@@ -42,6 +42,14 @@ while read line
 do
     echo $line >>output.txt
 done
+```
+
+参考代码2：
+
+```Shell
+#!/bin/bash
+echo Hello Linux
+cat >output.txt
 ```
 
 提交截止时间为4月1日晚23:00，请注意GitHub将在截止时间到达时锁定你的仓库，不再接受变更。
