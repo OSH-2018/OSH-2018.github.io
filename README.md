@@ -9,7 +9,9 @@ Operating Systems (H) 2018
 幻灯片
 ------
 
-（尚待发布）
+- [scheduling](http://hfs.mirrors.asia/07b74754e4b48a838dd92d0110d6254766e5564e2a659c8c5f4ce14b74b9c54b?type=application/pdf)
+- [ch02](http://hfs.mirrors.asia/19c518638cc011659c8fc038ee65f88d984f914281759243364739c75a361301?type=application/pdf)
+- [ch03](http://hfs.mirrors.asia/06858e4cb87b50a110a4c51504342a78dcf6ff886f29a383e545e216968d7a9f?type=application/pdf)
 
 作业与实验
 ----------
