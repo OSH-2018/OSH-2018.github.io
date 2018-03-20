@@ -14,7 +14,7 @@ Linux的安装与使用
 
 请大家进行上述学习后，在GitHub上完成[实验一](https://classroom.github.com/a/KL56bHvj)。
 
-你需要在页面中输入学号来将你的GitHub账号和学号绑定，之后GitHub会自动为你创建出一个git仓库。请`git clone`这个仓库，在其中创建名为`hello_linux.sh`的文件，使其功能如下文所述，并使用`git commit`、`git push`等命令将修改后的仓库上传到GitHub。
+你需要在页面中选择你的学号来将你的GitHub账号和学号绑定，之后GitHub会自动为你创建出一个git仓库。请`git clone`这个仓库，在其中创建名为`hello_linux.sh`的文件，使其功能如下文所述，并使用`git commit`、`git push`等命令将修改后的仓库上传到GitHub。
 
 `hello_linux.sh`应为**[可执行文件](http://man.linuxde.net/chmod)**，当以`./hello_linux.sh`这条命令执行它时，它应当向标准输出打印一行文本`Hello Linux`，并将标准输入的文本保存至当前目录下名为`output.txt`的文件。
 
