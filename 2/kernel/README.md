@@ -16,6 +16,12 @@ P.S. `curl`是一个多协议的网络通讯工具。在上一条命令中，`cu
 
 本文撰写时，Linux内核最新的稳定版本为4.10.7，为了避免内核版本不同带来的配置差异，建议大家统一使用`4.10.x`系列的内核。
 
+如果由于网络原因难以下载，可以使用科大源：
+
+```
+# curl https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v4.x/linux-4.10.7.tar.xz | tar xJf -
+```
+
 ## 编译
 
 ### 生成初始配置
