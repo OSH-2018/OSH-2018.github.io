@@ -63,12 +63,11 @@ P.S. `curl`是一个多协议的网络通讯工具。在上一条命令中，`cu
 [*] Initial RAM filesystem and RAM disk (initramfs/initrd) support
 ```
 
-打开ELF可执行文件和`#!`类脚本文件的支持：
+打开ELF可执行文件的支持：
 
 ```
 -> Executable file formats / Emulations
 [*] Kernel support for ELF binaries
-[*] Kernel support for scripts starting with #!
 ```
 
 打开TTY驱动的支持：
