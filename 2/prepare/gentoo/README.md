@@ -8,21 +8,23 @@
 
 浏览[Gentoo官方镜像](http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64)或[科大镜像](https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/current-stage3-amd64)，选择下载stage3-amd64-((buildtime)).tar.xz，或者通过以下命令下载：
 
+（注意以下操作均使用root用户）
+
 Gentoo官方源：
 
 ```
-$ wget http://distfiles.gentoo.org/releases/amd64/autobuilds/$(curl http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64.txt|grep -v "^#"|cut -d' ' -f1) -O /opt/stage3-amd64.tar.xz
+# wget http://distfiles.gentoo.org/releases/amd64/autobuilds/$(curl http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64.txt|grep -v "^#"|cut -d' ' -f1) -O /opt/stage3-amd64.tar.xz
 ```
 
 如果下载速度较慢，亦可从科大开源软件镜像站下载：
 
 ```
-$ wget https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/$(curl https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/latest-stage3-amd64.txt|grep -v "^#"|cut -d' ' -f1) -O /opt/stage3-amd64.tar.xz
+# wget https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/$(curl https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/latest-stage3-amd64.txt|grep -v "^#"|cut -d' ' -f1) -O /opt/stage3-amd64.tar.xz
 ```
 
 ### 解压
 
-解压镜像到`/opt/gentoo`：（注意以下操作均使用root用户）
+解压镜像到`/opt/gentoo`：
 
 ```
 # mkdir -pv /opt/gentoo
