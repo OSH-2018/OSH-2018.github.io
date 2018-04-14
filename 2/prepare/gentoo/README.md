@@ -84,7 +84,7 @@ source命令使用/etc/profile配置一些基本的环境变量，如PATH等。
 Gentoo自带编译器和文本编辑器nano，这里需要安装一些编译Linux内核所需要的工具：
 
 ```
-# emerge -av bc cpio
+# emerge -av bc cpio curl
 ```
 
 如果你倾向于使用vim，也可以通过此方式安装：
