@@ -48,6 +48,10 @@
 # wget -O /opt/ubuntu/etc/apt/sources.list https://mirrors.ustc.edu.cn/repogen/conf/ubuntu-http-4-xenial
 ```
 
+## 启用universe源
+
+我们需要的部分包在`xenial-security/universe`源中，需要编辑`/opt/ubuntu/etc/apt/sources.list`文件，将包含`xenial-security universe`字样的行前方的`#`号删除，使该行生效。
+
 ## 安装编译环境
 
 ### 改变根目录
@@ -55,7 +59,7 @@
 下面的命令将改变根目录`/`所代表的实际指向，我们需要将其修改为刚才解压得到的ubuntu镜像：
 
 ```
-# chroot /opt/ubuntu /bin/bash
+# chroot /opt/ubuntu /bin/su
 ```
 
 第二个参数`/bin/bash`表示在新的根目录环境中执行的命令。在这里，我们启动了一个bash shell。
