@@ -40,10 +40,16 @@ static void create_filenode(const char *filename, const struct stat *st)
 
 static void *oshfs_init(struct fuse_conn_info *conn)
 {
-    int size = 16 * 1024 * 1024; // 16 MiB
-    void *mem = mmap(NULL, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-    memset(mem, 0, size);
-    munmap(mem, size);
+    static const int size = 16 * 1024 * 1024;
+    static const int block = 64 * 1024;
+    void *mem[size / block];
+    for(int i = 0; i < size / block; i++) {
+        mem[i] = mmap(NULL, block, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+        memset(mem[i], 0, block);
+    }
+    for(int i = 0; i < size / block; i++) {
+        munmap(mem[i], block);
+    }
     return NULL;
 }
 
