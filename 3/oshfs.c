@@ -12,6 +12,9 @@ struct filenode {
     struct filenode *next;
 };
 
+static const size_t size = 4 * 1024 * 1024 * (size_t)1024;
+static void *mem[64 * 1024];
+
 static struct filenode *root = NULL;
 
 static struct filenode *get_filenode(const char *name)
@@ -40,15 +43,24 @@ static void create_filenode(const char *filename, const struct stat *st)
 
 static void *oshfs_init(struct fuse_conn_info *conn)
 {
-    static const int size = 16 * 1024 * 1024;
-    static const int block = 64 * 1024;
-    void *mem[size / block];
-    for(int i = 0; i < size / block; i++) {
-        mem[i] = mmap(NULL, block, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-        memset(mem[i], 0, block);
+    size_t blocknr = sizeof(mem) / sizeof(mem[0]);
+    size_t blocksize = size / blocknr;
+    // Demo 1
+    for(int i = 0; i < blocknr; i++) {
+        mem[i] = mmap(NULL, blocksize, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+        memset(mem[i], 0, blocksize);
     }
-    for(int i = 0; i < size / block; i++) {
-        munmap(mem[i], block);
+    for(int i = 0; i < blocknr; i++) {
+        munmap(mem[i], blocksize);
+    }
+    // Demo 2
+    mem[0] = mmap(NULL, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+    for(int i = 0; i < blocknr; i++) {
+        mem[i] = (char *)mem[0] + blocksize * i;
+        memset(mem[i], 0, blocksize);
+    }
+    for(int i = 0; i < blocknr; i++) {
+        munmap(mem[i], blocksize);
     }
     return NULL;
 }
