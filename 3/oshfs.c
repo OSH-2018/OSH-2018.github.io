@@ -1,3 +1,12 @@
+/*
+ * Copyright © 2018 Zitian Li <ztlizitian@gmail.com>
+ * This program is free software. It comes without any warranty, to
+ * the extent permitted by applicable law. You can redistribute it
+ * and/or modify it under the terms of the Do What The Fuck You Want
+ * To Public License, Version 2, as published by Sam Hocevar. See
+ * http://www.wtfpl.net/ for more details.
+ */
+#define _OSH_FS_VERSION 2018051000
 #define FUSE_USE_VERSION 26
 #include <string.h>
 #include <stdlib.h>
@@ -112,8 +121,9 @@ static int oshfs_open(const char *path, struct fuse_file_info *fi)
 static int oshfs_write(const char *path, const char *buf, size_t size, off_t offset, struct fuse_file_info *fi)
 {
     struct filenode *node = get_filenode(path);
-    node->st->st_size = offset + size;
-    node->content = realloc(node->content, offset + size);
+    if(offset + size > node->st->st_size)
+        node->st->st_size = offset + size;
+    node->content = realloc(node->content, node->st->st_size);
     memcpy(node->content + offset, buf, size);
     return size;
 }
