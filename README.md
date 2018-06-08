@@ -5,6 +5,7 @@ Operating Systems (H) 2018
 - 主讲教师：[邢凯](mailto:kxing@ustc.edu.cn)
 - 助教：[王子博](mailto:zbwang@0x01.me)、[李子天](mailto:lizitian@mail.ustc.edu.cn)、[高一凡](mailto:os@yfgao.com)
 - 讨论交流：微信群、[Telegram群](https://t.me/joinchat/BgAV9RI8AYGKVeJ5Hb0Q6w)
+- 期末考试：6月23日上午08:30-10:30，3C204
 
 幻灯片
 ------
@@ -22,6 +23,8 @@ Operating Systems (H) 2018
 - [实验三](3)
 - [实验四](4)
 
+迟交截止时间：7月4日下午18:00，在此之后将向教务处提交成绩，不再接受实验作业。
+
 大作业
 ------
 
@@ -30,3 +33,5 @@ Operating Systems (H) 2018
 请大家自由组队，并在GitHub上[创建或加入团队](https://classroom.github.com/g/M5Z0fAhL)，在其中记录队伍的所有成果。
 
 **特别注意**：每个同学都要点击上方的链接。如果是组长就创建团队，如果是组员就加入组长创建好的团队。
+
+大作业报告时间：6月30日
